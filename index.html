@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title class="neon-clock-title">Cumple Ceci</title>
+        <title class="neon-clock-title"></title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +53,8 @@ https://templatemo.com/tm-583-festava-live
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">Cumple Ceci</a>
+                    <a class="navbar-brand" href="index.html"><i class="bi bi-volume-up custom-icon me-2"></i>
+                        Mis 15 Ceci</a>
 
                     <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf87Fu2q8yVWnYR43ASJVN2YbM44w1co8LKlY_9uo5itfuY4Q/viewform?usp=dialog" class="btn custom-btn d-lg-none ms-auto me-4">Confirma Asistencia</a>
     
@@ -101,7 +102,7 @@ https://templatemo.com/tm-583-festava-live
                 </div>
 
                 <div class="video-wrap">
-                    <video autoplay="" loop="" class="custom-video" poster="">
+                    <video autoplay=""  class="custom-video" poster="">
                         <source src="video/pexels-2022395.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -400,42 +401,7 @@ T e m p l a t e M o
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
 
-        <script>
-      const targetDate = new Date('2025-02-01T21:00:00').getTime();
-
-function updateNeonClock() {
-    const now = new Date().getTime();
-    const timeRemaining = targetDate - now;
-    const messageElement = document.getElementById('neon-clock-message');
-    const displayElement = document.getElementById('neon-clock-display');
-
-    if (timeRemaining > 0) {
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-        document.getElementById('neon-clock-days').textContent = days.toString().padStart(2, '0');
-        document.getElementById('neon-clock-hours').textContent = hours.toString().padStart(2, '0');
-        document.getElementById('neon-clock-minutes').textContent = minutes.toString().padStart(2, '0');
-        document.getElementById('neon-clock-seconds').textContent = seconds.toString().padStart(2, '0');
-        messageElement.style.display = 'none';
-        displayElement.style.display = 'flex';
-    } else if (timeRemaining > -8 * 60 * 60 * 1000) {
-        messageElement.textContent = "AHORA";
-        messageElement.style.display = 'block';
-        displayElement.style.display = 'none';
-    } else {
-        messageElement.textContent = "Mira los recuerdos en el book de fotos";
-        messageElement.style.display = 'block';
-        displayElement.style.display = 'none';
-    }
-}
-
-const intervalId = setInterval(updateNeonClock, 1000);
-updateNeonClock();
-
-</script>
+   
 
 <Script>
     function obtenerTiempoRestante(endtime) {
@@ -491,20 +457,7 @@ let fechaLimite = "February 1 2025 21:00:00 GMT-3";
 inicializarReloj("cuentaRegresiva", fechaLimite);
 </Script>
 
-<script>
-    function donate(amount) {
-    // Coloca la cantidad seleccionada en la URL de Mercado Pago
-    var alias = "ceci.so.perez"; // Cambia esto por tu alias de Mercado Pago
-    var url = "https://www.mercadopago.com.ar/donations/checkout?recipient=" + alias + "&amount=" + amount;
-    
-    // Actualiza el enlace de Mercado Pago
-    document.getElementById("mercadopago-link").href = url;
-    
-    // Muestra un mensaje con la cantidad seleccionada
-    alert("¡Gracias por regalar $" + amount + " por mi cumpleaños!");
-}
 
-</script>
 
     </body>
 </html>
