@@ -41,9 +41,35 @@ TemplateMo 583 Festava Live
 https://templatemo.com/tm-583-festava-live
 
 -->
+
+<style>
+    /* Botón estilo neón */
+.popup-button {
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+    border: 3px solid #ff00ff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+}
+
+.popup-button:hover {
+    box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff;
+    transform: scale(1.1);
+}
+
+</style>
     </head>
     
     <body>
+
+       
 
         <main>
 
@@ -61,6 +87,8 @@ https://templatemo.com/tm-583-festava-live
                     </div>
                 </div>
             </header>
+
+
 
 
             <nav class="navbar navbar-expand-lg">
@@ -85,7 +113,7 @@ https://templatemo.com/tm-583-festava-live
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">Regálale</a>
+                                <a class="nav-link click-scroll" href="#mercado">Regálalos por Mercado</a>
                             </li>
                         </ul>
 
@@ -100,8 +128,14 @@ https://templatemo.com/tm-583-festava-live
 
                 <div class="container d-flex justify-content-center align-items-center">
                     <div class="row">
+                        
 
                         <div class="col-12 mt-auto mb-5 text-center">
+
+                            <div class="popup-overlay" id="popup">
+                                
+                                <button class="popup-button" id="playVideoBtn"><i style="color: #f9f9f9;" class="bi bi-play-circle custom-icon me-2"></i>Reproducir Video</button>
+                            </div>
                             <!-- <small>Festava Live Presents</small>
 
                             <h1 class="text-white mb-5">Night Live 2023</h1>
@@ -112,9 +146,8 @@ https://templatemo.com/tm-583-festava-live
                         
                     </div>
                 </div>
-
                 <div class="video-wrap">
-                    <video autoplay=""  class="custom-video" poster="">
+                    <video autoplay="1"  class="custom-video" poster="">
                         <source src="video/pexels-2022395.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -202,7 +235,7 @@ https://templatemo.com/tm-583-festava-live
                 </div>
             </section>
 
-            <section class="donation-section" style="text-align: center; padding: 2rem; background-color: #f9f9f9;">
+            <section id="mercado" class="donation-section" style="text-align: center; padding: 2rem; background-color: #f9f9f9;">
                 <h2 class="donation-title" style="font-size: 2rem; color: #0076DF; margin-bottom: 1rem; font-weight: bold;">
                     Regálale a Ceci mediante Mercado Pago
                 </h2>
@@ -223,7 +256,7 @@ https://templatemo.com/tm-583-festava-live
             
 
 
-            <section class="artists-section section-padding" id="section_3">
+            <!-- <section class="artists-section section-padding" id="section_3">
                 <div class="container">
                     <div class="row justify-content-center">
 
@@ -325,7 +358,151 @@ https://templatemo.com/tm-583-festava-live
 
                     </div>
                 </div>
+            </section> -->
+
+
+            <section class="artists-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <h2 class="mb-4">Mis fotos</h2>
+                        </div>
+                        
+                        <div class="gallery-wrapper">
+                            <div class="gallery">
+                                <!-- Generación automática de imágenes -->
+                                <!-- Repite este bloque para cada imagen -->
+                                <div class="artists-thumb" onclick="openCarousel(1)">
+                                    <img src="images/artists/1.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/2.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/3.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/4.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/5.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/6.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/7.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/8.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/9.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/10.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/11.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/12.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/13.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/14.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/15.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/16.png" class="artists-image img-fluid">
+                                </div>
+                                <div class="artists-thumb" onclick="openCarousel(2)">
+                                    <img src="images/artists/17.png" class="artists-image img-fluid">
+                                </div>
+                                <!-- Agrega hasta la imagen 18.png -->
+                                <!-- ... -->
+                                <div class="artists-thumb" onclick="openCarousel(18)">
+                                    <img src="images/artists/18.png" class="artists-image img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+            
+            <!-- Modal para pantalla completa -->
+            <div id="fullscreen-modal" class="modal" onclick="closeCarousel()">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    <img id="modal-image" src="" class="img-fluid">
+                </div>
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
+            </div>
+            
+            <style>
+                body {
+                    background: url('images/IrF.gif') no-repeat center center fixed;
+                    background-size: cover;
+                    /* animation: neonBackground 20s infinite alternate; */
+                }
+                /* @keyframes neonBackground {
+                    0% {filter: hue-rotate(0deg);}
+                    100% {filter: hue-rotate(360deg);}
+                } */
+                .gallery {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 15px;
+                }
+                .artists-thumb img {
+                    width: 150px;
+                    height: auto;
+                    cursor: pointer;
+                    transition: transform 0.3s;
+                }
+                .artists-thumb img:hover {
+                    transform: scale(1.1);
+                }
+                .modal {
+                    display: none;
+                    position: fixed;
+                    z-index: 1000;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.9);
+                }
+                .modal-content img {
+                    max-width: 100%;
+                    margin: auto;
+                    display: block;
+                }
+                .close {
+                    position: absolute;
+                    top: 20px;
+                    right: 30px;
+                    font-size: 40px;
+                    color: white;
+                    cursor: pointer;
+                }
+                .prev, .next {
+                    position: absolute;
+                    top: 50%;
+                    font-size: 50px;
+                    color: white;
+                    cursor: pointer;
+                }
+                .prev { left: 20px; }
+                .next { right: 20px; }
+            </style>
+            
 
 
           
@@ -407,6 +584,46 @@ T e m p l a t e M o
 -->
 
         <!-- JAVASCRIPT FILES -->
+        <script>
+            // Obtener elementos
+            const popup = document.getElementById("popup");
+            const playButton = document.getElementById("playVideoBtn");
+            const video = document.querySelector(".custom-video");
+    
+            // Evento de clic en el botón
+            playButton.addEventListener("click", function() {
+                video.play();  // Reproduce el video
+                popup.style.display = "none";  // Oculta el pop-up
+            });
+    
+            // Opcional: Reintentar la reproducción si es bloqueada
+            video.addEventListener("play", () => {
+                console.log("Video reproduciéndose...");
+            });
+    
+            video.addEventListener("error", () => {
+                console.log("Error al reproducir el video.");
+            });
+        </script>
+
+<script>
+    let currentImageIndex = 1;
+    function openCarousel(index) {
+        currentImageIndex = index;
+        document.getElementById('modal-image').src = `images/artists/${index}.png`;
+        document.getElementById('fullscreen-modal').style.display = 'block';
+    }
+    function closeCarousel() {
+        document.getElementById('fullscreen-modal').style.display = 'none';
+    }
+    function changeImage(step) {
+        currentImageIndex += step;
+        if (currentImageIndex < 1) currentImageIndex = 18;
+        if (currentImageIndex > 18) currentImageIndex = 1;
+        document.getElementById('modal-image').src = `images/artists${currentImageIndex}.png`;
+    }
+</script>
+
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.sticky.js"></script>

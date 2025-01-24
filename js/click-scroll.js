@@ -3,6 +3,15 @@
 
 var sectionArray = [1, 2, 3, 4, 5, 6];
 
+
+
+// Ejemplo de uso con jQuery y asegurando la carga completa del DOM
+$(document).ready(function() {
+    const element = $('#miElemento'); // Reemplaza #miElemento con tu selector
+    if (element.length) {
+      const top = element.offset().top;
+      // Tu código aquí
+
 $.each(sectionArray, function(index, value){
           
      $(document).scroll(function(){
@@ -35,3 +44,7 @@ $(document).ready(function(){
     $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
     $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
 });
+
+}
+});
+

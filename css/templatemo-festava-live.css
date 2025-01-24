@@ -4,7 +4,7 @@
   --white-color:                  #ffffff;
   --primary-color:                #b82ef8;
   --secondary-color:              #0799ee;
-  --section-bg-color:             #f0f8ff;
+  --section-bg-color:             #662aaa;
   --custom-btn-bg-color:          #ee07ee;
   --custom-btn-bg-hover-color:    #1fc0a5;
   --dark-color:                   #000000;
@@ -499,7 +499,7 @@ strong {
 -----------------------------------------*/
 .about-section {
   background-image: url('../images/edward-unsplash-blur.jpg');
-  background-color: #704010;
+  background-color: #080501;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -516,9 +516,9 @@ strong {
 }
 
 .mb-0 {
-  color: #9d56df; /* Negro */
+  color: #12d60c; /* Negro */
   font-weight: bold; /* Texto más grueso */
-  text-shadow: 2px 2px 5px rgba(5, 5, 5, 0.856); /* Sombra sutil */
+  text-shadow: 2px 2px 5px rgb(3, 3, 5); /* Sombra sutil */
 }
 
 
@@ -908,6 +908,7 @@ strong {
 /*---------------------------------------
   SCHEDULE              
 -----------------------------------------*/
+/* 
 .schedule-section {
   background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
   background-color: #242424;
@@ -983,7 +984,7 @@ strong {
   color: var(--white-color);
   position: relative;
   z-index: 2;
-}
+} */
 
 
 /*---------------------------------------
@@ -1091,7 +1092,7 @@ strong {
   overflow: hidden;
   padding-bottom: 30px;
 }
-
+/* 
 .site-footer-top {
   background-color: var(--secondary-color);
   background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
@@ -1099,7 +1100,7 @@ strong {
   margin-bottom: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
-}
+} */
 
 .site-footer-bottom {
   border-top: 1px solid #1f1c1c;
