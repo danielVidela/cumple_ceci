@@ -5,8 +5,8 @@
     
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Tarjeta de invitacion 15 de Ceci">
+        <meta name="author" content="Daniel Videla DABRE DIGITAL">
         <meta property="og:title" content="¡Estás invitado a los 15 de Ceci!">
         <meta property="og:description" content="Es obligatorio completar el formulario de asistencia para reservar tu lugar e ingreso a la fiesta. ¡No te lo pierdas!">
         <meta property="og:image" content="https://iili.io/2sRJr5Q.md.png">
@@ -152,7 +152,7 @@ https://templatemo.com/tm-583-festava-live
                     </div>
                 </div>
                 <div class="video-wrap">
-                    <video autoplay=""  class="custom-video" poster="">
+                    <video autoplay="" loop="" class="custom-video" poster="">
                         <source src="video/pexels-2022395.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -491,16 +491,17 @@ https://templatemo.com/tm-583-festava-live
         </main>
 
 
-        <footer data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000" class="site-footer">
+        <footer  class="site-footer">
             <div class="site-footer-top">
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-12">
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"class="col-lg-6 col-12">
                             <p>creado por:</p>
-                            <h2 class="text-white mb-lg-0">DABRE DIGITAL</h2>
+                            <h2 class="text-white mb-lg-0">DABRE DIGITAL </h2>
+                            <h3 class=" text-white mb-lg-0">de Daniel Videla Fotografia y Progarmación</h3>
                           
                         </div>
 
@@ -540,14 +541,10 @@ https://templatemo.com/tm-583-festava-live
                 <div class="container">
                   
 
-                        <div data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000"class="col-lg-12 col-12 mt-5">
+                        <div class="col-lg-12 col-12 mt-5">
                                           <p> ¡Contáctanos si te encantó esta web!</p>
 
-                            <p data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" class="align-items-lg-center copyright-text">Copyright © Daniel Videla 
+                            <p  class="align-items-lg-center copyright-text">Copyright © Daniel Videla 
                                <br> CEO DABRE Digital </p>
                         </div>
 
@@ -656,6 +653,17 @@ function inicializarReloj(id, endtime) {
 let fechaLimite = "February 1 2025 21:00:00 GMT-3";
 inicializarReloj("cuentaRegresiva", fechaLimite);
 </Script>
+
+document.addEventListener('touchstart', function() {
+    const video = document.querySelector('.custom-video');
+    
+    // Reproducir el video si está pausado y quitar el mute
+    if (video.paused) {
+        video.play();
+        video.muted = false;  // Asegura que el sonido esté activado
+    }
+});
+
 
 
 
