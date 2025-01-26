@@ -35,7 +35,9 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-festava-live.css" rel="stylesheet">
-        
+
+        <link rel="icon" href="/path/to/your/favicon.ico" type="image/x-icon">
+
 <!--
 
 TemplateMo 583 Festava Live
@@ -161,12 +163,12 @@ https://templatemo.com/tm-583-festava-live
        <section id="reloj">
 
       
-            <div data-aos="flip-up" class="neon-clock-title container">
+            <div data-aos="flip-up" data-aos-duration="2000" class="neon-clock-title container">
                
                 <h2 class="  texto">¡La cuenta regresiva para mi día especial comienza ahora!<br>🎉🎂</h2>
 
               
-                <div  data-aos="flip-right" id="cuentaRegresiva" class="cuentaRegresiva">
+                <div  data-aos="flip-right" data-aos-duration="2000" id="cuentaRegresiva" class="cuentaRegresiva">
                   <div class="neon-clock-title cuentaRegresiva-numero">
                     <span class="dias"></span>
                     <span class="cuentaRegresiva-text">DÍAS</span>
@@ -653,8 +655,7 @@ function inicializarReloj(id, endtime) {
 let fechaLimite = "February 1 2025 21:00:00 GMT-3";
 inicializarReloj("cuentaRegresiva", fechaLimite);
 </Script>
-
-document.addEventListener('touchstart', function() {
+<script>document.addEventListener('touchstart', function() {
     const video = document.querySelector('.custom-video');
     
     // Reproducir el video si está pausado y quitar el mute
@@ -663,6 +664,7 @@ document.addEventListener('touchstart', function() {
         video.muted = false;  // Asegura que el sonido esté activado
     }
 });
+</script>
 
 
 
